@@ -1,0 +1,119 @@
+# =================================
+# 1. BASIC FILE TYPES
+# =================================
+.txt
+.jpg
+.jpeg
+.png
+.gif
+.webp
+.bmp
+.pdf
+.doc
+.docx
+.xls
+.xlsx
+.ppt
+.pptx
+.zip
+.rar
+.7z
+
+# =================================
+# 2. WEB-RELATED FILE TYPES
+# =================================
+.html
+.htm
+.svg
+.xml
+.json
+.css
+.js
+
+# =================================
+# 3. SERVER-SIDE FILE TYPES
+# =================================
+.php
+.phtml
+.php5
+.php7
+.phar
+.phps
+.asp
+.aspx
+.jsp
+.jspx
+.cgi
+
+# =================================
+# 4. EXECUTABLE FILE TYPES
+# =================================
+.exe
+.dll
+.sh
+.bat
+.cmd
+.py
+.pl
+.rb
+
+# =================================
+# 5. DOUBLE EXTENSIONS
+# =================================
+test.jpg.php
+test.png.php
+test.gif.php
+test.pdf.php
+test.php.jpg
+test.php.png
+test.php.gif
+test.php.txt
+test.png.html
+test.html.jpg
+test.svg.jpg
+
+# =================================
+# 6. CASE MANIPULATION
+# =================================
+test.PHP
+test.PhP
+test.pHp
+test.JPG
+test.PNG
+test.SVG
+test.HTML
+
+# =================================
+# 7. MULTIPLE EXTENSIONS
+# =================================
+test.jpg.php.jpg
+test.png.html.php
+test.gif.php.png
+
+# =================================
+# 8. FILENAME MANIPULATION
+# =================================
+test file.php
+test_file.php
+test-file.php
+test..php
+test%2ephp
+test%252ephp
+
+# =================================
+# 9. LEGACY NULL BYTE CASES
+# =================================
+test.php%00.jpg
+test.jpg%00.php
+
+# =================================
+# 10. MIME TYPES
+# =================================
+image/jpeg
+image/png
+image/gif
+image/svg+xml
+application/pdf
+application/octet-stream
+text/plain
+text/html
