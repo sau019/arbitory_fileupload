@@ -1,0 +1,85 @@
+# 1. DIRECTORY FUNCTIONS
+getcwd()                  - Current working directory
+chdir($path)              - Change directory
+scandir($path)            - List directory entries
+__DIR__                   - Current PHP file directory
+__FILE__                  - Current PHP file path
+dirname($path)             - Parent directory
+realpath($path)            - Resolve absolute path
+opendir($path)             - Open directory
+readdir($handle)           - Read directory entry
+closedir($handle)          - Close directory
+
+# 2. FILE INFORMATION
+file_exists($path)         - Check file existence
+is_file($path)             - Check regular file
+is_dir($path)              - Check directory
+is_readable($path)         - Check read permission
+is_writable($path)         - Check write permission
+filesize($path)            - File size
+filetype($path)             - File type
+filemtime($path)            - Last modified time
+fileatime($path)            - Last access time
+fileperms($path)            - File permissions
+basename($path)             - Filename
+dirname($path)              - Parent path
+pathinfo($path)             - Path information
+realpath($path)             - Absolute path
+
+# 3. FILE READ / WRITE
+file_get_contents($path)    - Read file content
+file_put_contents($path)    - Write file content
+fopen($path, $mode)         - Open file
+fread($handle, $length)     - Read file
+fwrite($handle, $data)      - Write file
+fclose($handle)             - Close file
+feof($handle)               - Check end of file
+fgets($handle)              - Read line
+readfile($path)             - Output file content
+
+# 4. FILE UPLOAD FUNCTIONS
+$_FILES                     - Uploaded file information
+move_uploaded_file()        - Move uploaded file
+is_uploaded_file()          - Verify uploaded file
+finfo_open()                - Open file information resource
+finfo_file()                - Detect file MIME type
+mime_content_type()         - Detect MIME type
+pathinfo()                  - Extract extension and filename
+basename()                  - Extract filename
+
+# 5. SERVER INFORMATION
+phpversion()                - PHP version
+php_uname()                 - OS information
+PHP_OS                      - OS identifier
+PHP_SAPI                    - PHP execution interface
+get_current_user()          - Script owner information
+php_ini_loaded_file()        - Loaded PHP configuration path
+ini_get()                   - Read PHP configuration setting
+getenv()                    - Read environment variable
+
+# 6. PHP BASIC FUNCTIONS
+echo                        - Display output
+print_r($value)             - Display arrays
+var_dump($value)            - Display value and type
+isset($value)               - Check variable
+empty($value)               - Check empty value
+count($array)               - Count elements
+strlen($string)             - String length
+strpos($string, $search)    - Find string position
+str_replace()               - Replace string
+explode()                   - Split string
+implode()                   - Join array elements
+
+# 7. FILE PERMISSION / SECURITY
+chmod($path, $mode)         - Change permissions
+chown($path, $user)         - Change ownership
+hash_file($algo, $path)     - Calculate file hash
+hash_file('sha256', $path)  - SHA256 file hash
+finfo_file()                - Inspect file MIME type
+
+# 8. LINUX TO PHP EQUIVALENTS
+pwd                         - getcwd()
+cd folder                   - chdir("folder")
+ls                          - scandir(".")
+cat file                    - file_get_contents("file")
+stat file                   - stat($path)
