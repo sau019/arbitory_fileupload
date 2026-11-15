@@ -1,0 +1,89 @@
+# HTTP Content-Type (MIME Types) – Quick Reference
+
+## 1. Image MIME Types
+
+| Content-Type | File Type | Usage |
+|---|---|---|
+| image/jpeg | JPG / JPEG | Photos |
+| image/png | PNG | Transparent images, screenshots |
+| image/gif | GIF | Animated images |
+| image/webp | WebP | Web-optimized images |
+| image/svg+xml | SVG | Vector graphics |
+| image/bmp | BMP | Bitmap images |
+| image/avif | AVIF | Modern image format |
+
+## 2. Text and Web MIME Types
+
+| Content-Type | Usage |
+|---|---|
+| text/plain | Plain text |
+| text/html | HTML webpages |
+| text/css | CSS stylesheets |
+| text/javascript | JavaScript code |
+| application/json | JSON data / API responses |
+| application/xml | XML data |
+| text/xml | XML text |
+| text/csv | CSV files |
+
+## 3. Application and Document MIME Types
+
+| Content-Type | File Type / Usage |
+|---|---|
+| application/pdf | PDF documents |
+| application/zip | ZIP archives |
+| application/gzip | GZIP compressed files |
+| application/octet-stream | Generic binary data |
+| application/rtf | RTF documents |
+| application/msword | DOC documents |
+| application/vnd.openxmlformats-officedocument.wordprocessingml.document | DOCX documents |
+| application/vnd.openxmlformats-officedocument.spreadsheetml.sheet | XLSX spreadsheets |
+| application/vnd.openxmlformats-officedocument.presentationml.presentation | PPTX presentations |
+
+## 4. Programming and Executable-Related MIME Types
+
+| Content-Type | Usage |
+|---|---|
+| application/x-php | PHP-related MIME type |
+| application/x-httpd-php | PHP-related MIME type |
+| application/javascript | JavaScript |
+| application/wasm | WebAssembly |
+| application/x-sh | Shell script |
+| application/java-archive | Java JAR files |
+
+Note: PHP does not have one universally used MIME type. Values can vary depending on server and application configuration.
+
+## 5. Audio and Video MIME Types
+
+| Content-Type | Usage |
+|---|---|
+| audio/mpeg | MP3 audio |
+| audio/wav | WAV audio |
+| audio/ogg | OGG audio |
+| video/mp4 | MP4 video |
+| video/webm | WebM video |
+| video/ogg | OGG video |
+
+## 6. Important Concepts in File Upload Testing
+
+During file upload testing, understand these three components:
+
+| Component | Meaning |
+|---|---|
+| Filename | File name and extension |
+| Content-Type | MIME type declared in the HTTP request |
+| File Content | Actual data inside the uploaded file |
+
+Example:
+
+```http
+Content-Disposition: form-data; name="avatar"; filename="photo.jpg"
+Content-Type: image/jpeg
+
+[Actual file data]
+```
+
+Important: The Content-Type header is client-controlled in a multipart upload request. Changing it does not automatically change the actual file content.
+
+### Key Takeaway
+
+Filename, Content-Type, and actual file content are three different things. A file named `photo.jpg` with `Content-Type: image/jpeg` is not necessarily a genuine JPEG image.
